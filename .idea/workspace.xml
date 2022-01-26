@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b50513e-f107-4af4-b331-7b4af0972ad3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22tSKqksuo25j8Kqqw97VuNMYPa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git\udp_penetrate\server" />
+      <recent name="E:\Go\udp_penetrate\server" />
+      <recent name="E:\Go\udp_penetrate\peer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Batch.BuildLinux (2)">
+    <configuration name="BuildLinux (1)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="udp_penetrate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\Go\udp_penetrate\server" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="BuildLinux.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BuildLinux (2)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="udp_penetrate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\Git\udp_penetrate\peer" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="BuildLinux.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BuildLinux_ser" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="udp_penetrate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\Git\udp_penetrate\server" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="BuildLinux_ser.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build peer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="udp_penetrate" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/peer/peer.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build server.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="udp_penetrate" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/server/server.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Batch.BuildLinux (2)" />
+        <item itemvalue="Batch.BuildLinux_ser" />
+        <item itemvalue="Batch.BuildLinux (1)" />
+        <item itemvalue="Go Build.go build server.go (1)" />
+        <item itemvalue="Go Build.go build peer.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1011" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1643162162926">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1643162162926" />
+    <state width="541" height="466" key="DebuggerActiveHint" timestamp="1640655875917">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="541" height="466" key="DebuggerActiveHint/0.0.2560.1400@0.0.2560.1400" timestamp="1640655875917" />
+    <state width="2517" height="419" key="GridCell.Tab.0.bottom" timestamp="1643162359540">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1643162359540" />
+    <state width="2517" height="419" key="GridCell.Tab.0.center" timestamp="1643162359540">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="419" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1643162359540" />
+    <state width="2517" height="419" key="GridCell.Tab.0.left" timestamp="1643162359540">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="419" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1643162359540" />
+    <state width="2517" height="419" key="GridCell.Tab.0.right" timestamp="1643162359540">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="419" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1643162359540" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1640671168055">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1640671168055" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1640671168055">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1640671168055" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1640671168055">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1640671168055" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1640671168055">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1640671168055" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/peer/peer.go</url>
+          <line>23</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/peer/peer.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
