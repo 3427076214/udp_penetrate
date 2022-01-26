@@ -17,11 +17,14 @@ func main() {
 	// 当前进程标记字符串,便于显示
 	var  tag   string
 	var  tcp   bool
+	var port int
 	flag.BoolVar(&tcp, "t", false, "tcp"  )
 	flag.StringVar(&tag, "tag", "", "tag"  )
+	flag.IntVar(&port, "p", 18506, "port"  )
 	flag.Parse()
 
-	if tag==""{
+	dstPort = int(port)
+	if len(tag)==0{
 		tag= strconv.Itoa(mathUtil.GetRand().Intn(10000))
 	}
 
@@ -32,11 +35,13 @@ func main() {
 	}
 }
 
+var dstPort int = 18506
+
 func run_udp()  {
 	defSrcPort := 9982
 	srcAddr := &net.UDPAddr{IP: net.IPv4zero, Port: defSrcPort} // 注意端口必须固定
 	//dstAddr := &net.UDPAddr{IP: net.ParseIP("207.148.70.129"), Port: 9981}
-	dstAddr := &net.UDPAddr{IP: net.ParseIP("106.52.100.147"), Port: 18506}
+	dstAddr := &net.UDPAddr{IP: net.ParseIP("119.91.89.103"), Port: dstPort}
 	//dstAddr := &net.UDPAddr{IP: net.ParseIP("10.255.0.16"), Port: 18503}
 	conn, err := net.DialUDP("udp", srcAddr, dstAddr)
 	if err != nil {
@@ -76,7 +81,7 @@ func run_tcp()  {
 	defSrcPort := 9982
 	srcAddr := &net.TCPAddr{IP: net.IPv4zero, Port: defSrcPort} // 注意端口必须固定
 	//dstAddr := &net.UDPAddr{IP: net.ParseIP("207.148.70.129"), Port: 9981}
-	dstAddr := &net.TCPAddr{IP: net.ParseIP("106.52.100.147"), Port: 18506}
+	dstAddr := &net.TCPAddr{IP: net.ParseIP("119.91.89.103"), Port: dstPort}
 	//dstAddr := &net.TCPAddr{IP: net.ParseIP("10.255.0.16"), Port: 18503}
 	conn, err := net.DialTCP("tcp", srcAddr, dstAddr)
 	if err != nil {
