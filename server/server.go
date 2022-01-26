@@ -10,8 +10,13 @@ import (
 
 func main()  {
 	var  tcp   bool
+	var port int
 	flag.BoolVar(&tcp, "t", false, "tcp"  )
+	flag.IntVar(&port, "p", 18506, "port"  )
 	flag.Parse()
+
+	listPort = port
+
 	if tcp{
 		run_tcp()
 	}else {
@@ -19,8 +24,10 @@ func main()  {
 	}
 }
 
+var listPort = 18506
+
 func run_udp() {
-	listener, err := net.ListenUDP("udp", &net.UDPAddr{IP: net.IPv4zero, Port: 18506})
+	listener, err := net.ListenUDP("udp", &net.UDPAddr{IP: net.IPv4zero, Port: listPort})
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -48,7 +55,7 @@ func run_udp() {
 }
 
 func run_tcp() {
-	listener, err := net.ListenTCP("tcp", &net.TCPAddr{IP: net.IPv4zero, Port: 18506})
+	listener, err := net.ListenTCP("tcp", &net.TCPAddr{IP: net.IPv4zero, Port: listPort})
 	if err != nil {
 		fmt.Println(err)
 		return
