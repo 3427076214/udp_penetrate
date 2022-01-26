@@ -1,11 +1,11 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"moqikaka.com/goutil/mathUtil"
 	"net"
-	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -15,16 +15,24 @@ const HAND_SHAKE_MSG = "我是打洞消息"
 
 func main() {
 	// 当前进程标记字符串,便于显示
-	if len(os.Args)>1{
-		tag = os.Args[1]
-	}else {
+	var  tag   string
+	var  tcp   bool
+	flag.BoolVar(&tcp, "t", false, "tcp"  )
+	flag.StringVar(&tag, "tag", "", "tag"  )
+	flag.Parse()
+
+	if tag==""{
 		tag= strconv.Itoa(mathUtil.GetRand().Intn(10000))
 	}
 
-	udp()
+	if tcp{
+		run_tcp()
+	}else {
+		run_udp()
+	}
 }
 
-func udp()  {
+func run_udp()  {
 	defSrcPort := 9982
 	srcAddr := &net.UDPAddr{IP: net.IPv4zero, Port: defSrcPort} // 注意端口必须固定
 	//dstAddr := &net.UDPAddr{IP: net.ParseIP("207.148.70.129"), Port: 9981}
@@ -64,11 +72,11 @@ func udp()  {
 	bidirectionHole(srcAddr, &anotherPeer)
 }
 
-func tcp()  {
+func run_tcp()  {
 	defSrcPort := 9982
 	srcAddr := &net.TCPAddr{IP: net.IPv4zero, Port: defSrcPort} // 注意端口必须固定
 	//dstAddr := &net.UDPAddr{IP: net.ParseIP("207.148.70.129"), Port: 9981}
-	dstAddr := &net.TCPAddr{IP: net.ParseIP("106.52.100.147"), Port: 18503}
+	dstAddr := &net.TCPAddr{IP: net.ParseIP("106.52.100.147"), Port: 18506}
 	//dstAddr := &net.TCPAddr{IP: net.ParseIP("10.255.0.16"), Port: 18503}
 	conn, err := net.DialTCP("tcp", srcAddr, dstAddr)
 	if err != nil {

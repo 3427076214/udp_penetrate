@@ -1,13 +1,25 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"net"
 	"time"
 )
 
-func main() {
+func main()  {
+	var  tcp   bool
+	flag.BoolVar(&tcp, "t", false, "tcp"  )
+	flag.Parse()
+	if tcp{
+		run_tcp()
+	}else {
+		run_udp()
+	}
+}
+
+func run_udp() {
 	listener, err := net.ListenUDP("udp", &net.UDPAddr{IP: net.IPv4zero, Port: 18506})
 	if err != nil {
 		fmt.Println(err)
@@ -35,8 +47,8 @@ func main() {
 	}
 }
 
-func main2() {
-	listener, err := net.ListenTCP("tcp", &net.TCPAddr{IP: net.IPv4zero, Port: 18503})
+func run_tcp() {
+	listener, err := net.ListenTCP("tcp", &net.TCPAddr{IP: net.IPv4zero, Port: 18506})
 	if err != nil {
 		fmt.Println(err)
 		return
