@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4b50513e-f107-4af4-b331-7b4af0972ad3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peer/peer.go" beforeDir="false" afterPath="$PROJECT_DIR$/peer/peer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peer/udp_peer" beforeDir="false" afterPath="$PROJECT_DIR$/peer/udp_peer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/udp_server" beforeDir="false" afterPath="$PROJECT_DIR$/server/udp_server" afterDir="false" />
     </list>
@@ -60,7 +62,7 @@
       <recent name="E:\Go\udp_penetrate\peer" />
     </key>
   </component>
-  <component name="RunManager" selected="Batch.BuildLinux (2)">
+  <component name="RunManager" selected="Batch.BuildLinux_ser">
     <configuration name="BuildLinux (1)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <module name="udp_penetrate" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Batch.BuildLinux (2)" />
         <item itemvalue="Batch.BuildLinux_ser" />
+        <item itemvalue="Batch.BuildLinux (2)" />
         <item itemvalue="Go Build.go build peer.go" />
         <item itemvalue="Batch.BuildLinux (1)" />
         <item itemvalue="Go Build.go build server.go (1)" />
@@ -138,55 +140,55 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="541" height="466" key="DebuggerActiveHint/0.0.2560.1400@0.0.2560.1400" timestamp="1640655875917" />
-    <state width="2517" height="419" key="GridCell.Tab.0.bottom" timestamp="1643168712437">
+    <state width="2517" height="419" key="GridCell.Tab.0.bottom" timestamp="1643351378628">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1643168712437" />
-    <state width="2517" height="419" key="GridCell.Tab.0.center" timestamp="1643168712436">
+    <state width="2517" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1643351378628" />
+    <state width="2517" height="419" key="GridCell.Tab.0.center" timestamp="1643351378627">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="419" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1643168712436" />
-    <state width="2517" height="419" key="GridCell.Tab.0.left" timestamp="1643168712435">
+    <state width="2517" height="419" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1643351378627" />
+    <state width="2517" height="419" key="GridCell.Tab.0.left" timestamp="1643351378627">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="419" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1643168712435" />
-    <state width="2517" height="419" key="GridCell.Tab.0.right" timestamp="1643168712436">
+    <state width="2517" height="419" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1643351378627" />
+    <state width="2517" height="419" key="GridCell.Tab.0.right" timestamp="1643351378628">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="419" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1643168712436" />
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1643164423989">
+    <state width="2517" height="419" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1643351378628" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1643171868661">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1643164423989" />
-    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1643164423989">
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1643171868661" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1643171868661">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1643164423989" />
-    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1643164423989">
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1643171868661" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1643171868661">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1643164423989" />
-    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1643164423989">
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1643171868661" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1643171868661">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1643164423989" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1643171868661" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/peer/peer.go</url>
-          <line>41</line>
+          <line>44</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/peer/peer.go</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/peer/peer.go</url>
-          <line>67</line>
+          <line>68</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

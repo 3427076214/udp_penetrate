@@ -12,37 +12,38 @@ import (
 )
 var tag string
 const HAND_SHAKE_MSG = "我是打洞消息"
+var dstPort int = 18506
+var dstIp string="6.6.6.6"
 
 func main() {
 	// 当前进程标记字符串,便于显示
 	var  tag   string
 	var  tcp   bool
+	var ip string
 	var port int
 	flag.BoolVar(&tcp, "t", false, "tcp"  )
 	flag.StringVar(&tag, "tag", "", "tag"  )
 	flag.IntVar(&port, "p", 18506, "port"  )
+	flag.StringVar(&ip, "ip", "112.74.89.58", "port"  )
 	flag.Parse()
 
 	dstPort = int(port)
+	dstIp = ip
 	if len(tag)==0{
 		tag= strconv.Itoa(mathUtil.GetRand().Intn(10000))
 	}
 
-	if tcp{
+	if !tcp{
 		run_tcp()
 	}else {
 		run_udp()
 	}
 }
 
-var dstPort int = 18506
-
 func run_udp()  {
 	defSrcPort := 9982
 	srcAddr := &net.UDPAddr{IP: net.IPv4zero, Port: defSrcPort} // 注意端口必须固定
-	//dstAddr := &net.UDPAddr{IP: net.ParseIP("207.148.70.129"), Port: 9981}
-	dstAddr := &net.UDPAddr{IP: net.ParseIP("119.91.89.103"), Port: dstPort}
-	//dstAddr := &net.UDPAddr{IP: net.ParseIP("10.255.0.16"), Port: 18503}
+	dstAddr := &net.UDPAddr{IP: net.ParseIP(dstIp), Port: dstPort}
 	conn, err := net.DialUDP("udp", srcAddr, dstAddr)
 	if err != nil {
 		fmt.Println(err)
@@ -80,9 +81,7 @@ func run_udp()  {
 func run_tcp()  {
 	defSrcPort := 9982
 	srcAddr := &net.TCPAddr{IP: net.IPv4zero, Port: defSrcPort} // 注意端口必须固定
-	//dstAddr := &net.UDPAddr{IP: net.ParseIP("207.148.70.129"), Port: 9981}
-	dstAddr := &net.TCPAddr{IP: net.ParseIP("119.91.89.103"), Port: dstPort}
-	//dstAddr := &net.TCPAddr{IP: net.ParseIP("10.255.0.16"), Port: 18503}
+	dstAddr := &net.TCPAddr{IP: net.ParseIP(dstIp), Port: dstPort}
 	conn, err := net.DialTCP("tcp", srcAddr, dstAddr)
 	if err != nil {
 		log.Println(err)

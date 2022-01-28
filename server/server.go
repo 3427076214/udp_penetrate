@@ -81,7 +81,7 @@ func run_tcp() {
 		}
 
 		conn.RemoteAddr().String()
-		log.Printf("<%s> %s\n", conn.RemoteAddr().String(), data[:n])
+		log.Printf("RemoteAddr:<%s> %s\n", conn.RemoteAddr().String(), data[:n])
 		peers = append(peers, conn)
 		if len(peers) == 2 {
 			log.Printf("进行UDP打洞,建立 %s <--> %s 的连接\n", peers[0].RemoteAddr().String(), peers[1].RemoteAddr().String())
